@@ -234,10 +234,24 @@ wheels = [
 ]
 
 [[package]]
+name = "geffnet"
+version = "1.0.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "torch" },
+    { name = "torchvision" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/da/44/033ff2297c89a04d20327f9ca772bc0051f2ce30f88676c4c1d6fcdee251/geffnet-1.0.2.tar.gz", hash = "sha256:b0f5a8795f46ee59593130f1d2145e124f8e6e4e26324e4503159cac0070e116", size = 40077, upload-time = "2021-07-08T19:05:07.748Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ed/1f/95cb961341bf33e534a472672ef4916c90046dc3c57b1442f5586dda72f1/geffnet-1.0.2-py3-none-any.whl", hash = "sha256:259013030bf429bc7a4fc4e8dc3fef6364e9750a6cee24d28e1674f8c3048d3a", size = 40193, upload-time = "2021-07-08T19:05:05.749Z" },
+]
+
+[[package]]
 name = "geo-tex-poc"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "geffnet" },
     { name = "matplotlib" },
     { name = "numpy", version = "2.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12'" },
     { name = "numpy", version = "2.5.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
@@ -250,6 +264,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "geffnet", specifier = ">=1.0.2" },
     { name = "matplotlib", specifier = ">=3.11.0" },
     { name = "numpy", specifier = ">=2.4.6" },
     { name = "opencv-python", specifier = ">=4.13.0.92" },
