@@ -1,6 +1,7 @@
 # Repo specific gitignore rules
 DSINE-main/
 external/dsine/checkpoints/
+outputs/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
