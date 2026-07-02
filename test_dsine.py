@@ -22,7 +22,7 @@ from PIL import Image
 from dsine_infer import load_dsine, predict_normals
 
 CHECKPOINT = "external/dsine/checkpoints/exp001_cvpr2024/dsine.pt"
-DEFAULT_IMAGE = "DSINE-main/notes/example/000000_img.png"
+DEFAULT_IMAGE = "external/dsine/example/000000_img.png"
 OUTPUT_DIR = Path("outputs")
 
 

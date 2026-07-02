@@ -16,7 +16,7 @@ from PIL import Image
 
 from wavelet_energy import wavelet_energy_map, normalize_for_display
 
-DEFAULT_IMAGE = "DSINE-main/notes/example/000000_img.png"
+DEFAULT_IMAGE = "external/dsine/example/000000_img.png"
 OUTPUT_DIR = Path("outputs")
 
 
